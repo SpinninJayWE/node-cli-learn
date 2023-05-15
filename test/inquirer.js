@@ -1,0 +1,13 @@
+const inquirer = require('inquirer')
+
+inquirer
+	.prompt([
+		{
+			type: 'input',
+			name: 'username',
+			message: '您的名字',
+		},
+	])
+	.then((answer) => {
+		console.log(answer)
+	})
